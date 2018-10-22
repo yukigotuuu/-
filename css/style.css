@@ -4,35 +4,6 @@ body{
 }
 
 header{
-	display: flex;
-	justify-content: space-between;
-	background-color: #F7C5EE;
-	/* padding: 5px 50px; */
-	color: #BD44FC;
-	font-size: 18px;
-}
-
-.icon{
-	height: 60px;
-
-}
-
-.header-left{
-	display: flex;
-	align-items: center;
-
-}
-
-.header-right{
-	display: flex;
-	align-items: center;
-}
-
-.header-right li:first-child{
-	margin-right:20px;
-}
-
-.yg{
 	background-image: url(../img/sora.jpg);
 	background-size: cover;
 	background-position: center;
@@ -47,57 +18,58 @@ header{
 .title{
 	font-size: 50px;
 	margin-bottom:30px;
+	background:-webkit-gradient(radial, center center,0,center center,100,from(rgba(254,158,244,.5)),to(rgba(131,237,250,.5)));
+	padding: 30px;
 }
 
 
+.title h1{
+	display: inline-block;
+	margin:0 -.075em;
+	animation: loading .7 infinite alternate;
+}
 
-.subtitle{
+.title h1:nth-child(2) {
+	animation-delay: 1.5s;
+}
+
+.title h1:nth-child(3) {
+	animation-delay: 3s;
+}
+
+.title h1:nth-child(4) {
+	animation-delay: 4.5s;
+}
+
+.title h1:nth-child(5) {
+	animation-delay: 6s;
+}
+
+@keyframes loading{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0.8);
+	}
+}
+
+/* .subtitle{
 	font-size: 20px;
 	margin-bottom: 80px;
-}
+} */
 
 
-.fa-twitter-square:before {
+.fa-twitter-square {
     margin-right: 30px;
     color: rgb(123,221,249);
 }
 
 
-.fa-instagram:before {
+.fa-instagram {
     content: "\f16d";
     color: rgb(254,100,205);
 }
-
-
-/* .btn{
-	height: 30px;
-	width: 80px;
-	font-size: 15px;
-	color: navy;
-	border-radius: 20px;
-	cursor: pointer;
-
-}
-
-.twitter{
-	margin-right:50px;
-	background-color:rgba(123,221,249,.5);
-	border-color:rgba(123,221,249,.5);
-}
-
-.twitter:hover{
-	background-color:rgb(123,221,249)
-}
-
-.insta{
-	background-color:rgba(254,100,205,.5);
-	border-color:rgba(254,100,205,.5);
-}
-
-.insta:hover{
-	background-color:rgb(254,100,205);
-} */
-
 
 
 .main{
@@ -138,7 +110,6 @@ header{
 	opacity: .7;
 
 }
-
 .img-box li img:hover{
 	opacity: 1;
 	transition: .3s;
@@ -158,11 +129,11 @@ header{
 }
 
 .co{
-	background-color: skyblue;
+	background-color: yellow;
 }
 
 .mu{
-	background-color: yellow;
+	background-color: skyblue;
 }
 
 
@@ -265,29 +236,17 @@ footer{
 @media screen and (max-width: 480px){
 	
 	header{
-		height: 40px;
+		height: 300px;
 		padding: 5px 20px;
-	}
-
-	.icon {
-    	height: 30px;
-	}
-
-	.header-left span{
-		display: none;
-	}
-
-	.header-right{
-		display: none;
 	}
 
 	.title {
     	font-size: 40px;
 	}
 
-	.subtitle {
-   		font-size: 15px;
-   		font-weight: normal;
+	.fa-twitter-square,
+	.fa-instagram {
+    font-size: 30px;
 	}
 
 
@@ -376,4 +335,3 @@ footer{
 
 
 
-}
