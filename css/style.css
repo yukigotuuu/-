@@ -35,7 +35,8 @@ header{
 .yg{
 	background-image: url(../img/sora.jpg);
 	background-size: cover;
-	height: 400px;
+	background-position: center;
+    height: 800px;
 	color: #fff;
 	text-align: center;
 	display: flex;
