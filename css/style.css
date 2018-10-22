@@ -7,7 +7,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	background-color: #F7C5EE;
-	padding: 5px 50px;
+	/* padding: 5px 50px; */
 	color: #BD44FC;
 	font-size: 18px;
 }
@@ -58,13 +58,13 @@ header{
 
 
 .fa-twitter-square:before {
-    content: "\f081";
     margin-right: 30px;
     color: rgb(123,221,249);
 }
 
 .fa-twitter-square:hover{
-	animation: vertical;
+	opacity: .5;
+	 /*animation: vertical; */
 }
 
 
