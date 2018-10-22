@@ -62,11 +62,6 @@ header{
     color: rgb(123,221,249);
 }
 
-.fa-twitter-square:hover{
-	opacity: .5;
-	 /*animation: vertical; */
-}
-
 
 .fa-instagram:before {
     content: "\f16d";
